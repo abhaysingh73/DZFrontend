@@ -1,0 +1,143 @@
+.container-2 {
+    padding: 20px;
+}
+
+.additionalStyle {
+    width: 18rem;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 0px 10px 10px 0px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.theme-card {
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+.theme-card:hover {
+    border: 1px solid #55d82d;
+    -webkit-box-shadow: 0px 3px 60px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 60px rgba(0, 0, 0, 0.25);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+.outerDiv {
+    /* width: 350px;
+    height: 550px; */
+    width: 470px;
+    height: 600px;
+    /* Fixed size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Prevent overflow */
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+.inner {
+    max-width: 300%;
+    /* Prevents it from exceeding container width */
+    max-height: 300%;
+    /* Prevents it from exceeding container height */
+    transform: scale(0.7);
+    /* Scale down to fit */
+    transform-origin: center;
+    background-color: lightblue;
+    /* padding: 20px; */
+    /* position: relative;
+    top: -100px; */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.inner2 {
+    max-width: 300%;
+    /* Prevents it from exceeding container width */
+    max-height: 300%;
+    /* Prevents it from exceeding container height */
+    transform: scale(0.7);
+    /* Scale down to fit */
+    transform-origin: center;
+    background-color: lightblue;
+    /* padding: 20px; */
+    /* position: relative;
+    top: -100px; */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.inner3{
+    max-width: 300%;
+    max-height: 300%;
+    transform: scale(0.5);
+    transform-origin: center;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+/* General styles to hide elements */
+.forDesktop {
+    display: none;  /* Default to hide for mobile */
+    /* padding: 10px 0px 0px 50px; */
+}
+
+.forMobile {
+    display: none;  /* Default to hide for desktop */
+}
+
+/* For screens wider than 768px (typically tablets and desktop) */
+@media (min-width: 768px) {
+    .forDesktop {
+        display: block;  /* Show only on desktop */
+    }
+}
+
+/* For screens smaller than 768px (typically mobile) */
+@media (max-width: 767px) {
+    .forMobile {
+        display: block;  /* Show only on mobile */
+    }
+    .paddingBottom50{
+        padding-bottom: 50px;
+    }
+}
+
+/* Optional: You can customize the look of the navbar for mobile */
+.forMobile .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f9fa;  /* Adjust navbar color */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.forMobile button {
+    width: 100%;
+    /* margin: 1%; */
+    padding: 10px;
+}
+
+.forMobile{
+    padding: 10px;
+}

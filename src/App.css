@@ -1,0 +1,21 @@
+button {
+    cursor: pointer;
+}
+
+.App {
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1050;
+}
+.modal-backdrop {
+    opacity: 0.5;
+}

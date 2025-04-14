@@ -1,0 +1,38 @@
+/* General styles to hide elements */
+.forDesktop {
+    display: none;  /* Default to hide for mobile */
+}
+
+.forMobile {
+    display: none;  /* Default to hide for desktop */
+}
+
+/* For screens wider than 768px (typically tablets and desktop) */
+@media (min-width: 768px) {
+    .forDesktop {
+        display: block;  /* Show only on desktop */
+    }
+}
+
+/* For screens smaller than 768px (typically mobile) */
+@media (max-width: 767px) {
+    .forMobile {
+        display: block;  /* Show only on mobile */
+    }
+}
+
+/* Optional: You can customize the look of the navbar for mobile */
+.forMobile .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;  /* Adjust navbar color */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.forMobile button {
+    /* width: 48%; */
+    /* margin: 1%; */
+    padding: 10px;
+}

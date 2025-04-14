@@ -1,0 +1,18 @@
+.customStyle {
+    background-color: #1A81FF;
+    box-shadow: 0 4px 6px rgba(75, 75, 75, 0.1);
+}
+.dropdown:has(a.active) {
+    color: white !important;
+}
+.customNavW{
+    max-width: var(--bs-offcanvas-width);
+    min-width: 100px;
+    width: 250px !important;
+}
+.whiteColor{
+    color: white !important;
+}
+.dropdown-menu{
+    background-color: #404040;
+}

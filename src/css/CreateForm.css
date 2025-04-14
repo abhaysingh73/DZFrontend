@@ -1,0 +1,175 @@
+/* src/components/Purchase/CreateForm.css */
+
+/* Container for the form */
+.create-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Form title */
+.create-form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Create a flex container for label and input to align them side by side */
+.create-form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; /* Space between label and input */
+    margin-bottom: 1rem;
+}
+
+/* Input fields */
+.create-form-input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Add focus effect to input fields */
+.create-form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit button */
+.create-form-submit {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.create-form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Input label styles */
+.create-form-label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 0; /* Remove bottom margin */
+    width: 120px; /* Fixed width for label to make sure inputs align */
+    text-align: right; /* Align label text to the right */
+}
+
+/* Spacing between input fields */
+.create-form-submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Highlight error fields with a red border */
+.create-form-input.error {
+    border: 1px solid red;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* CreateForm.css */
+.file-upload-area {
+    position: relative;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.file-upload-area:hover {
+    border-color: #00aaff;
+}
+
+.file-upload-btn {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.file-upload-btn:hover {
+    background-color: #0077cc;
+}
+
+.file-input {
+    display: none; /* Hide the original file input */
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.upload-loading {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #00aaff;
+}
+
+.response-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #d9534f; /* Red for error messages */
+}
+
+/* Optional: Add styles for dragging state */
+.file-upload-area.dragging {
+    border-color: #f1c40f;
+}
+
+.excel-upload-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.download-template-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #e9f5ff;
+    transition: background-color 0.2s ease;
+}
+
+.download-template-link:hover {
+    background-color: #d0ebff;
+    text-decoration: underline;
+}
+

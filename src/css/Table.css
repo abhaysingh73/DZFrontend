@@ -1,0 +1,210 @@
+/* Table container styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styles */
+th {
+    background-color: #ebebeb;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/* Table cell styles */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hover effect on rows */
+tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Table pagination styles */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.pagination button {
+    background-color: #1a81ff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #006bb3;
+}
+
+.pagination select,
+.pagination input {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.pagination select {
+    width: 80px;
+}
+
+.pagination span {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Container for the search field and export button */
+.search-export-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Global search input (inside the container) */
+.search-export-container input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-export-container input[type="text"]:focus {
+    border-color: #1a81ff;
+    outline: none;
+}
+
+/* Export button styling (inside the container) */
+.search-export-container button {
+    padding: 10px 20px;
+    background-color: #1a81ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.search-export-container button:hover {
+    background-color: #006bb3;
+}
+
+.search-export-container button:disabled {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+}
+
+
+
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+table td {
+    background-color: white;
+    font-size: 13px;
+}
+
+/* Sorting Indicator */
+table th span {
+    margin-left: 5px;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+table tr.selected {
+    background-color: #c6f7c6; /* Light Green */
+}
+
+/* Pagination Controls */
+div > button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+div > button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+div > button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+div select {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+div input[type="number"] {
+    /* padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd; */
+    /* width: 50px; */
+}
+
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
